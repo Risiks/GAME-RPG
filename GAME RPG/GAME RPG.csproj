@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>GAME_RPG</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Hero.cs" />
+    <Compile Remove="Items.cs" />
+    <Compile Remove="Monstre.cs" />
+    <Compile Remove="Stats.cs" />
+    <Compile Remove="Team.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibrairyDataRpg\LibrairyDataRpg.csproj" />
+  </ItemGroup>
+
+</Project>
